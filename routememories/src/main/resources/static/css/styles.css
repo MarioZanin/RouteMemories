@@ -2,6 +2,7 @@ body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%; /* Garante que o corpo ocupa toda a altura da janela */
 }
 
 header {
@@ -13,6 +14,7 @@ header {
     text-align: center;
     padding: 1rem 0;
     position: relative;
+    height: 15%; /* Ocupa 20% da altura da tela */
 }
 
 h1 {
@@ -49,13 +51,79 @@ button {
     cursor: pointer;
 }
 
-main {
+/*main {
     padding: 20px;
 }
+*/
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #1EEDFA;
+    /*height: 60%; * Ocupa 60% da altura da tela */
+    height: calc(100% - 15%); /* Ocupa todo o espaço restante */
+}
+
+aside {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: #1EEDFA;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 20%; /* Ocupa 20% da altura da tela */
+} 
+
+header button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; /* Distância da borda direita */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    display: flex;
+    /*align-items: center;*/
+    flex-direction: column; /* Alterado para apresentar os campos abaixo dos rótulos */
+}
+
+.input-group label {
+    /*margin-right: 1rem; */
+    margin-bottom: 0.5rem; /* Espaçamento entre rótulo e campo */
+}
+
+.search-options{
+    margin-bottom: 2rem;
+    padding: 20px;
+    text-align: center;
+    max-width: 700px; /* Ajuste o valor conforme necessário */
+    width: 60%; /* Ajuste o valor conforme necessário */
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
 
 footer {
     text-align: center;
     padding: 20px;
+    width: 100%;
+    display: flex;
+    background-color: #1EEDFA;
+    /*flex-direction: collumn;*/
+    flex-direction: row;
+    align-items: center; /* Centraliza horizontalmente */
+    /*justify-content: center; /* Centraliza verticalmente */
+    justify-content: space-around; /* Espaçamento igual entre os botões */
+    height: 20%; /* Ocupa 20% da altura da tela */
 }
 
 

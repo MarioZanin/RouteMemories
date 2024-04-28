@@ -19,20 +19,35 @@
     </header>
        
     <main>
+        <aside class="container">
+            <div class="search-options">
         <!-- Formulário de pesquisa -->
         <form action="/search" method="post">
+            <div class="input-group">
             <label for="deceasedName">Nome do Falecido:</label>
             <input type="text" id="deceasedName" name="deceasedName" required><br><br>
+            </div>
+            <div class="input-group">
             <label for="cemeteryName">Nome do Cemitério:</label>
             <input type="text" id="cemeteryName" name="cemeteryName" required><br><br>
+            </div>
+            <div class="input-group">
             <label for="dateOfDeath">Data do Falecimento:</label>
             <input type="date" id="dateOfDeath" name="dateOfDeath"><br><br>
+            </div>
             <button type="submit">Search</button>
         </form>
+            </div>
+        </aside>
     </main>
+
 
     <footer>
         <!-- Botões de funcionalidades -->
+        <button type="submit">Botão1</button>
+        <button type="submit">Botão2</button>
+        <button type="submit">Botão3</button>
+        <button type="submit">Botão4</button> 
     </footer>
 </body>
 </html>
